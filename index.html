@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovartus Task Manager</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1><i class="fa-solid fa-list-check"></i> Innovartus Task Manager</h1>
+        <p>Cloud-Based SaaS Task Management Application</p>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Add Task Section -->
+        <section class="task-input">
+
+            <h2>Add New Task</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task...">
+
+            <button id="addTaskBtn">
+                <i class="fa-solid fa-plus"></i>
+                Add Task
+            </button>
+
+        </section>
+
+        <!-- Task List -->
+        <section class="task-list">
+
+            <h2>My Tasks</h2>
+
+            <ul id="taskList">
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Innovartus SaaS |
+            Cloud Computing Assignment
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Body */
+
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header */
+
+header {
+    background: #ffffff;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+}
+
+header h1 {
+    color: #0d6efd;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+}
+
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+
+/* Cards */
+
+.task-input,
+.task-list {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+}
+
+
+/* Headings */
+
+h2 {
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+
+/* Input */
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: .3s;
+}
+
+input:focus {
+    border-color: #0d6efd;
+}
+
+
+/* Button */
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #0d6efd;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #084298;
+}
+
+
+/* Task List */
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: #f8f9fa;
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+/* Action Buttons */
+
+.actions button {
+    width: auto;
+    margin-left: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+/* Responsive */
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 24px;
+    }
+    .task-input,
+    .task-list {
+        padding: 20px;
+    }
+}
